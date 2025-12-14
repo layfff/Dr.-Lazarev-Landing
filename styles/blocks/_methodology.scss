@@ -5,13 +5,19 @@
     row-gap: 72px;
   }
 
-  &__image-wrapper {
-    display: grid;
+  &__card {
+    height: 422px;
+    @include desktop {
+      height: clamp(319px, calc(0.92vw + 316px) , 422px);
+    }
   }
 
   &__image {
     border-radius: var(--border-radius);
-    height: 870px;
+    background-image: url(../../images/methodology-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
     @include tablet {
       display: none;
     }

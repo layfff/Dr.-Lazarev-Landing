@@ -484,6 +484,7 @@ h4, .h4 {
 @media (max-width: 768px) {
   .section--alt-style {
     border-radius: 34px;
+    padding-block: 32px;
   }
 }
 
@@ -556,23 +557,7 @@ h4, .h4 {
     --gridColumns: 1;
   }
 }
-.grid__item {
-  grid-column: span 1;
-}
-.grid__item--1 {
-  grid-column: span 1;
-}
-.grid__item--2 {
-  grid-column: span 1;
-}
 .grid__item--3 {
-  grid-column: span 1;
-}
-.grid__item--4 {
-  grid-column: span 1;
-}
-.grid__item--image {
-  grid-column: span 1;
   grid-row: span 2;
 }
 
@@ -596,7 +581,6 @@ h4, .h4 {
 }
 .card__icon {
   align-self: flex-start;
-  margin-bottom: 168px;
 }
 .card__description {
   font-size: clamp(18px, 1.6666666667vw, 24px);
@@ -652,12 +636,19 @@ h4, .h4 {
   flex-direction: column;
   row-gap: 72px;
 }
-.methodology__image-wrapper {
-  display: grid;
+.methodology__card {
+  height: 422px;
+}
+@media (max-width: 1280px) {
+  .methodology__card {
+    height: clamp(319px, 0.92vw + 316px, 422px);
+  }
 }
 .methodology__image {
   border-radius: var(--border-radius);
-  height: 870px;
+  background-image: url(../../images/methodology-img.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media (max-width: 1023px) {
   .methodology__image {
