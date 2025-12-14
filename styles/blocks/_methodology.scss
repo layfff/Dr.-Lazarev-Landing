@@ -1,0 +1,23 @@
+.methodology {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+  }
+
+  &__image-wrapper {
+    display: grid;
+  }
+
+  &__image {
+    border-radius: var(--border-radius);
+    height: 870px;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__body {
+    color: var(--color-light);
+  }
+}

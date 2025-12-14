@@ -1,0 +1,10 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  text-align: center;
+
+  &__description {
+    @include fluid-text(24, 15);
+  }
+}

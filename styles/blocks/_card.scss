@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-dark-alt);
+  border-radius: var(--border-radius);
+  padding: 32px;
+
+  svg *[fill] { fill: #F28B63 }
+
+  &--accent {
+    color: var(--color-dark);
+    background-color: var(--color-accent);
+    svg *[fill] { fill: #212121 }
+  }
+
+  &__icon {
+    align-self: flex-start;
+    margin-bottom: 168px;
+  }
+
+  &__description {
+    @include fluid-text(24, 18);
+    font-weight: 500;
+
+    &--small {
+      font-size: 16px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}

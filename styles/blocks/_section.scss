@@ -1,0 +1,29 @@
+.section {
+  --sectionMarginTop: 152px;
+  margin-top: var(--sectionMarginTop);
+  border: 1px solid transparent;
+
+  &--mt-45 {
+    --sectionMarginTop: 45px;
+  }
+
+  &--mt-149 {
+    --sectionMarginTop: 149px;
+  }
+
+  &--mt-155 {
+    --sectionMarginTop: 155px;
+  }
+
+  &--alt-style {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    padding-block-start: 95px;
+    padding-block-end: 89px;
+    border-radius: 60px;
+
+    @include mobile {
+      border-radius: 34px;
+    }
+  }
+}

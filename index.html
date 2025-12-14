@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Dr. Lazarev Website</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <div class="header__brand">
+        <a href="#" class="header__logo logo">
+          <img 
+            src="./images/logo.svg" 
+            alt="Dr. Lazarev" 
+            class="logo__image"
+            loading="lazy"
+            width="164" height="30">
+        </a>
+
+        <address class="header__addres hidden-mobile">
+          <p>
+            Prague, 10 Pražská str
+          </p>
+        </address>
+      </div>
+      
+      <nav class="header__navigation hidden-mobile">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="#" class="header__link">sessions</a>
+          </li>
+
+          <li class="header__list-item">
+            <a href="#" class="header__link">contacts</a>
+          </li>
+
+          <li class="header__list-item">
+            <a href="#" class="header__link">reviews</a>
+          </li>
+
+          <li class="header__list-item">
+            <a href="#" class="header__link">About me</a>
+          </li>
+        </ul>
+
+        <a href="#" class="header__button button">Contact me</a>
+      </nav>
+
+      <button 
+        class="header__burger burger-button visible-mobile" 
+        type="button"
+        onclick="mobileOverlay.showModal()"></button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section section--mt-45">
+      <div class="hero">
+        <div class="hero__container container">
+          <header class="hero__header section-header">
+            <h1 class="section-header__title">Physiotherapist & massage therapist Viktor Lazarev</h1>
+          </header>
+          <div class="hero__body">
+            <div class="hero__card card">
+              <div class="card__icon">
+                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 16V11.7895C0 10.5107 0.216741 9.15399 0.650224 7.7193C1.09865 6.26901 1.74141 4.87329 2.57848 3.53217C3.43049 2.17544 4.45441 0.99805 5.65022 0L8.52018 2.43275C7.57848 3.83626 6.75635 5.30214 6.05381 6.83041C5.36622 8.34308 5.02242 9.96491 5.02242 11.6959V16H0ZM11.4798 16V11.7895C11.4798 10.5107 11.6966 9.15399 12.13 7.7193C12.5785 6.26901 13.2212 4.87329 14.0583 3.53217C14.9103 2.17544 15.9342 0.99805 17.13 0L20 2.43275C19.0583 3.83626 18.2362 5.30214 17.5336 6.83041C16.846 8.34308 16.5022 9.96491 16.5022 11.6959V16H11.4798Z" fill="#F28B63"/>
+                </svg>
+              </div>
+              
+              <div class="card__body">
+                <p class="card__description">
+                  I help young people with back problems caused by long hours in front of a computer or injuries
+                </p>
+  
+               <button class="card__button button" type="button">View massage programs</button>
+              </div>
+              
+            </div>
+            
+            <img 
+              src="./images/hero-img.svg" 
+              alt=""
+              class="hero__image"
+              loading="lazy"
+              width="872">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--mt-149 section--alt-style">
+      <div class="methodology">
+        <div class="methodology__container container">
+          <header class="methodology__header section-header">
+            <h2 class="section-header__title">My methodology</h2>
+            <p class="section-header__description">
+              My vocation is not only to treat but also to prevent problems. Regular massage sessions are not only a pleasant pleasure, but also an effective way to reduce the risk of pain syndromes. I strive not just to treat, but to prevent problems
+            </p>
+          </header>
+
+          <div class="methodology__body">
+            <ul class="methodology__cards grid grid--2">
+              <li class="methodology__cards-item grid__item">
+                <article class="methodology__card card">
+                  <div class="card__icon">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1604 15.7781C14.7489 23.6431 8.13417 29.9085 0 30V0C8.13417 0.0915699 14.7489 6.3569 15.1604 14.2219C15.5665 6.46058 22.0134 0.257038 30 0.00686193V29.9933C22.0134 29.7431 15.5665 23.5395 15.1604 15.7781Z" fill="#F28B63"/>
+                    </svg>
+                  </div>
+
+                  <div class="card__body">
+                    <h3 class="card__title">Body harmony and health promotion</h3>
+                    <p class="card__description card__description--small">
+                      My back massage technique is not only focused on pain relief and overall health. I try to rebalance the body through massage, which helps to normalize it and promote wellness
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="methodology__cards-item grid__item grid__item--2">
+                <article class="methodology__card card card--accent">
+                  <div class="card__icon">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1604 15.7781C14.7489 23.6431 8.13417 29.9085 0 30V0C8.13417 0.0915699 14.7489 6.3569 15.1604 14.2219C15.5665 6.46058 22.0134 0.257038 30 0.00686193V29.9933C22.0134 29.7431 15.5665 23.5395 15.1604 15.7781Z" fill="#212121"/>
+                    </svg>
+                  </div>
+
+                  <div class="card__body">
+                    <h3 class="card__title">Prevention of musculoskeletal problems</h3>
+                    <p class="card__description card__description--small">
+                      My vocation is not only to treat, but also to prevent problems Regular massage sessions are not only a pleasant pleasure, but also an effective way to reduce the risk of pain syndromes. I strive to prevent problems, not just treat them
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="methodology__cards-item hidden-mobile grid__item grid__item--image">
+                <div class="methodology__image-wrapper">
+                  <img 
+                    src="./images/methodology-img.svg" 
+                    alt="" 
+                    class="methodology__image grid__item grid__item--image"
+                    loading="lazy">
+                </div>
+              </li>
+
+              <li class="methodology__cards-item grid__item grid__item--3">
+                <article class="methodology__card card">
+                  <div class="card__icon">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1604 15.7781C14.7489 23.6431 8.13417 29.9085 0 30V0C8.13417 0.0915699 14.7489 6.3569 15.1604 14.2219C15.5665 6.46058 22.0134 0.257038 30 0.00686193V29.9933C22.0134 29.7431 15.5665 23.5395 15.1604 15.7781Z" fill="#F28B63"/>
+                    </svg>
+                  </div>
+
+                  <div class="card__body">
+                    <h3 class="card__title">Improving immunity through back care</h3>
+                    <p class="card__description card__description--small">
+                      Back massage has a direct effect on the immune systemMy massage technique not only helps to relieve pain and tension, but also to boost your immune system. Regular massage sessions can help your body fight stress and illness more effectively
+                    </p>
+                  </div>
+                </article>
+              </li>
+
+              <li class="methodology__cards-item grid__item grid__item--4">
+                <article class="methodology__card card">
+                  <div class="card__icon">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1604 15.7781C14.7489 23.6431 8.13417 29.9085 0 30V0C8.13417 0.0915699 14.7489 6.3569 15.1604 14.2219C15.5665 6.46058 22.0134 0.257038 30 0.00686193V29.9933C22.0134 29.7431 15.5665 23.5395 15.1604 15.7781Z" fill="#F28B63"/>
+                    </svg>
+                  </div>
+
+                  <div class="card__body">
+                    <h3 class="card__title">Pain from sitting down to work and how to deal with them</h3>
+                    <p class="card__description card__description--small">
+                      My practice focuses on young adults who suffer from back pain caused by long hours in front of a computer or due to injury. I work to help them recover and find comfort in their daily livess
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button
+        class="mobile-overlay__close-button cross-button"
+        type="submit"
+      >
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__list-item">
+          <a href="#" class="header__link">sessions</a>
+        </li>
+
+        <li class="mobile-overlay__list-item">
+          <a href="#" class="header__link">contacts</a>
+        </li>
+
+        <li class="mobile-overlay__list-item">
+          <a href="#" class="header__link">reviews</a>
+        </li>
+
+        <li class="mobile-overlay__list-item">
+          <a href="#" class="header__link">About me</a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+</body>
+</html>
