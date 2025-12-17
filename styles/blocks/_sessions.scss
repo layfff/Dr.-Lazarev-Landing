@@ -1,0 +1,47 @@
+.sessions {
+  &__header {
+    margin-bottom: 72px;
+  }
+
+  &__image {
+    background-image: url(../../images/sessions-1.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__image--2 {
+    background-image: url(../../images/sessions-2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__image, &__image--2 {
+    border-radius: var(--border-radius);
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+
+    .card__body {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+
+      .card__title {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
