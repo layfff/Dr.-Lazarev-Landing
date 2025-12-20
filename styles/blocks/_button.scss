@@ -20,8 +20,22 @@
     color: var(--color-accent);
     border: 1px solid var(--color-dark);
 
-    &:hover {
+    @include hover {
       color: var(--color-dark);
     }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: var(--color-light);
+
+    @include hover {
+      background-color: var(--color-accent);
+      color: var(--color-dark);
+    }
+  }
+
+  &--small {
+    padding-inline: 38px;
   }
 }

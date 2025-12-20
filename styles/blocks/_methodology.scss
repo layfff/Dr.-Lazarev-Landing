@@ -7,9 +7,6 @@
 
   &__card {
     height: 422px;
-    @include desktop {
-      height: clamp(319px, calc(0.92vw + 316px) , 422px);
-    }
   }
 
   &__image {

@@ -296,8 +296,34 @@ h4, .h4 {
   color: var(--color-accent);
   border: 1px solid var(--color-dark);
 }
-.button--dark-bg:hover {
-  color: var(--color-dark);
+@media (hover: hover) {
+  .button--dark-bg:hover {
+    color: var(--color-dark);
+  }
+}
+@media (hover: none) {
+  .button--dark-bg:active {
+    color: var(--color-dark);
+  }
+}
+.button--transparent {
+  background-color: transparent;
+  color: var(--color-light);
+}
+@media (hover: hover) {
+  .button--transparent:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+  }
+}
+@media (hover: none) {
+  .button--transparent:active {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+  }
+}
+.button--small {
+  padding-inline: 38px;
 }
 
 .burger-button {
@@ -599,14 +625,43 @@ h4, .h4 {
 .card__description {
   font-size: clamp(18px, 1.6666666667vw, 24px);
   font-weight: 500;
+  position: relative;
 }
 .card__description--small {
   font-size: 16px;
+}
+.card__description--before::before {
+  width: 6px;
+  aspect-ratio: 1;
+  content: "";
+  background-color: #9E624B;
+  border: 2px solid #F28B63;
+  border-radius: 50%;
+  left: -15px;
+  top: 8px;
+  position: absolute;
 }
 .card__body {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+}
+.card__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+@media (max-width: 768px) {
+  .card__buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .card__button {
+    width: 100%;
+  }
 }
 
 .hero {
@@ -652,11 +707,6 @@ h4, .h4 {
 }
 .methodology__card {
   height: 422px;
-}
-@media (max-width: 1280px) {
-  .methodology__card {
-    height: clamp(319px, 0.92vw + 316px, 422px);
-  }
 }
 .methodology__image {
   border-radius: var(--border-radius);
@@ -714,4 +764,38 @@ h4, .h4 {
   .sessions__card .card__title {
     margin-bottom: 32px;
   }
+}
+
+.about__header {
+  margin-bottom: 72px;
+}
+.about__body {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+@media (max-width: 1023px) {
+  .about__body {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
+.about__image {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: var(--border-radius);
+}
+@media (max-width: 768px) {
+  .about__image {
+    height: 258px;
+  }
+}
+.about__card {
+  row-gap: 32px;
+  justify-content: start;
+}
+.about__card .card__title {
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

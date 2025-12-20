@@ -1,0 +1,35 @@
+.about {
+  &__header {
+    margin-bottom: 72px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  &__image {
+    display: block;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+
+    @include mobile {
+      height: 258px;
+    }
+  }
+
+  &__card {
+    row-gap: 32px;
+    justify-content: start;
+
+    .card__title {
+      font-weight: 500;
+    }
+  }
+}
