@@ -594,6 +594,16 @@ h4, .h4 {
 .grid__item--image {
   grid-row: span 2;
 }
+@media (max-width: 768px) {
+  .grid__item--acupuncture {
+    order: -2;
+  }
+}
+@media (max-width: 768px) {
+  .grid__item--lifestyle {
+    order: -1;
+  }
+}
 
 .card {
   display: flex;
@@ -640,6 +650,11 @@ h4, .h4 {
   left: -15px;
   top: 8px;
   position: absolute;
+}
+@media (max-width: 768px) {
+  .card__description--before::before {
+    display: none;
+  }
 }
 .card__body {
   display: flex;

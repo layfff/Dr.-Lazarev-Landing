@@ -35,5 +35,17 @@
     &--image {
       grid-row: span 2;
     }
+
+    &--acupuncture {
+      @include mobile {
+        order: -2;
+      }
+    }
+
+    &--lifestyle {
+      @include mobile {
+        order: -1;
+      }
+    }
   }
 }
