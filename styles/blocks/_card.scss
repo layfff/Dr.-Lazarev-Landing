@@ -6,6 +6,10 @@
   border-radius: var(--border-radius);
   padding: 32px;
 
+  @include mobile {
+    padding: 16px;
+  }
+
   svg *[fill] { fill: #F28B63 }
 
   &--accent {

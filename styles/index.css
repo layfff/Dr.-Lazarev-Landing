@@ -613,6 +613,11 @@ h4, .h4 {
   border-radius: var(--border-radius);
   padding: 32px;
 }
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+  }
+}
 .card svg *[fill] {
   fill: #F28B63;
 }
