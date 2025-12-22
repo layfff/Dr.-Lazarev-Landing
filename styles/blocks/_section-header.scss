@@ -3,6 +3,19 @@
   flex-direction: column;
   row-gap: 24px;
   text-align: center;
+  margin-bottom: 72px;
+  
+  @include mobile {
+    margin-bottom: 24px;
+  }
+
+  &--small-mb {
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 16px;
+    }
+  }
 
   &__description {
     @include fluid-text(24, 15);

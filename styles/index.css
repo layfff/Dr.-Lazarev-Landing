@@ -527,6 +527,20 @@ h4, .h4 {
   flex-direction: column;
   row-gap: 24px;
   text-align: center;
+  margin-bottom: 72px;
+}
+@media (max-width: 768px) {
+  .section-header {
+    margin-bottom: 24px;
+  }
+}
+.section-header--small-mb {
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .section-header--small-mb {
+    margin-bottom: 16px;
+  }
 }
 .section-header__description {
   font-size: clamp(15px, 1.6666666667vw, 24px);
@@ -627,6 +641,16 @@ h4, .h4 {
 }
 .card--accent svg *[fill] {
   fill: #212121;
+}
+@media (hover: hover) {
+  .card__link:hover {
+    text-decoration: underline;
+  }
+}
+@media (hover: none) {
+  .card__link:active {
+    text-decoration: underline;
+  }
 }
 .card__price-time {
   opacity: 0.7;
@@ -818,4 +842,36 @@ h4, .h4 {
 }
 .about__card .card__title {
   font-weight: 500;
+}
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  height: 567px;
+  background-image: url("../../images/map.svg");
+  background-position: center;
+  border-radius: var(--border-radius);
+}
+@media (max-width: 768px) {
+  .contacts__map {
+    height: 517px;
+  }
+}
+.contacts__card {
+  position: absolute;
+  row-gap: 41px;
+  max-width: 512px;
+}
+@media (max-width: 768px) {
+  .contacts__card {
+    bottom: -244px;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 769px) {
+  .contacts__card {
+    bottom: 46px;
+    left: 35px;
+  }
 }/*# sourceMappingURL=index.css.map */

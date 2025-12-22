@@ -18,6 +18,12 @@
     svg *[fill] { fill: #212121 }
   }
 
+  &__link {
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+
   &__price {
     &-time {
       opacity: 0.7;
