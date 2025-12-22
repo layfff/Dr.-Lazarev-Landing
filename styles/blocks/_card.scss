@@ -18,6 +18,27 @@
     svg *[fill] { fill: #212121 }
   }
 
+  &--dark {
+    background-color: var(--color-dark);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 9px;
+
+    &-number {
+      font-weight: 300;
+    }
+  }
+
   &__link {
     @include hover {
       text-decoration: underline;

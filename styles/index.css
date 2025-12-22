@@ -642,6 +642,24 @@ h4, .h4 {
 .card--accent svg *[fill] {
   fill: #212121;
 }
+.card--dark {
+  background-color: var(--color-dark);
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+}
+.card__rating-number {
+  font-weight: 300;
+}
 @media (hover: hover) {
   .card__link:hover {
     text-decoration: underline;
@@ -858,20 +876,20 @@ h4, .h4 {
   }
 }
 .contacts__card {
+  row-gap: 41px;
+  margin-top: 24px;
+}
+.contacts__card--position {
   position: absolute;
   row-gap: 41px;
   max-width: 512px;
+  bottom: 46px;
+  left: 35px;
 }
-@media (max-width: 768px) {
-  .contacts__card {
-    bottom: -244px;
-    width: 100%;
-    left: 0;
-  }
-}
-@media (min-width: 769px) {
-  .contacts__card {
-    bottom: 46px;
-    left: 35px;
-  }
+
+.testimonials__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */

@@ -374,28 +374,122 @@
     <section class="section">
       <div class="contacts">
         <div class="contacts__container container">
-          <div class="contacts__header section-header">
+          <header class="contacts__header section-header">
             <h2 class="section-header__title">Contacts</h2>
-          </div>
+          </header>
 
           <div class="contacts__body">
-              <div class="contacts__map">
-                <div class="contacts__card card card--dark">
-                <div class="card__icon">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1604 15.7781C14.7489 23.6431 8.13417 29.9085 0 30V0C8.13417 0.0915699 14.7489 6.3569 15.1604 14.2219C15.5665 6.46058 22.0134 0.257038 30 0.00686193V29.9933C22.0134 29.7431 15.5665 23.5395 15.1604 15.7781Z" fill="#F28B63"/>
-                  </svg>
-                </div>
+            <div class="contacts__map">
+              <div class="contacts__card contacts__card--position card card--dark hidden-mobile">
+                  <div class="card__icon">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1604 15.7781C14.7489 23.6431 8.13417 29.9085 0 30V0C8.13417 0.0915699 14.7489 6.3569 15.1604 14.2219C15.5665 6.46058 22.0134 0.257038 30 0.00686193V29.9933C22.0134 29.7431 15.5665 23.5395 15.1604 15.7781Z" fill="#F28B63"/>
+                    </svg>
+                  </div>
 
-                <div class="card__body">
-                  <h3 class="card__title">Prague, 10 Pražská str.</h3>
+                  <div class="card__body">
+                    <h3 class="card__title">Prague, 10 Pražská str.</h3>
 
-                  <a href="tel:+420 (456) 200-10-41" class="card__link">+420 (456) 200-10-41</a>
-                  <a href="mailto:lazarevnfo@gmail.com" class="card__link">lazarevnfo@gmail.com</a>
-                </div>
+                    <a href="tel:+420 (456) 200-10-41" class="card__link">+420 (456) 200-10-41</a>
+                    <a href="mailto:lazarevnfo@gmail.com" class="card__link">lazarevnfo@gmail.com</a>
+                  </div>
               </div>
             </div>
             
+            <div class="contacts__card card visible-mobile">
+              <div class="card__icon">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1604 15.7781C14.7489 23.6431 8.13417 29.9085 0 30V0C8.13417 0.0915699 14.7489 6.3569 15.1604 14.2219C15.5665 6.46058 22.0134 0.257038 30 0.00686193V29.9933C22.0134 29.7431 15.5665 23.5395 15.1604 15.7781Z" fill="#F28B63"/>
+                </svg>
+              </div>
+
+              <div class="card__body">
+                <h3 class="card__title">Prague, 10 Pražská str.</h3>
+
+                <a href="tel:+420 (456) 200-10-41" class="card__link">+420 (456) 200-10-41</a>
+                <a href="mailto:lazarevnfo@gmail.com" class="card__link">lazarevnfo@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="testimonials">
+        <div class="testimonials__container container">
+          <header class="testimonials__header section-header">
+            <h2 class="section-header__title">Testimonials</h2>
+          </header>
+
+          <div class="testimonials__body">
+            <ul class="testimonial__card-list grid grid--3">
+              <li class="testimonials__card-list-item">
+                <article class="testimonials__card card">
+                  <div class="card__header">
+                    <h4 class="card__title">Olga Pushkina</h4>
+                    <div class="card__rating">
+                      <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.55951 0L11.1516 5.43223L17.119 6.21885L12.7537 10.3628L13.8496 16.2812L8.55951 13.41L3.26944 16.2812L4.36535 10.3628L9.53674e-07 6.21885L5.96738 5.43223L8.55951 0Z" fill="#F28B63"/>
+                      </svg>
+
+                      <p class="card__rating-number">
+                        4.8
+                      </p>
+                    </div>
+                  </div>
+                  <blockquote class="card__quote">
+                    <p class="card__description card__description--small">
+                      I had a massage on the recommendation of friends and I have never regretted it. He is a real professional. You can feel that he works with love for his profession. I will contact him again!
+                    </p>
+                  </blockquote>
+                </article>
+              </li>
+
+              <li class="testimonials__card-list-item">
+                <article class="testimonials__card card">
+                  <div class="card__header">
+                    <h4 class="card__title">Viktor Marchenko</h4>
+                    <div class="card__rating">
+                      <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.55951 0L11.1516 5.43223L17.119 6.21885L12.7537 10.3628L13.8496 16.2812L8.55951 13.41L3.26944 16.2812L4.36535 10.3628L9.53674e-07 6.21885L5.96738 5.43223L8.55951 0Z" fill="#F28B63"/>
+                      </svg>
+
+                      <p class="card__rating-number">
+                        4.8
+                      </p>
+                    </div>
+                  </div>
+                  <blockquote class="card__quote">
+                    <p class="card__description card__description--small">
+                      Very happy with the result! I had a massage and the sensations are amazing. It is immediately obvious that a professional with a lot of experience is working. I will definitely recommend to my friends!
+                    </p>
+                  </blockquote>
+                </article>
+              </li>
+
+              <li class="testimonials__card-list-item">
+                <article class="testimonials__card card card--accent">
+                  <div class="card__header">
+                    <h4 class="card__title">Artem Loktev</h4>
+                    <div class="card__rating">
+                      <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.55951 0L11.1516 5.43223L17.119 6.21885L12.7537 10.3628L13.8496 16.2812L8.55951 13.41L3.26944 16.2812L4.36535 10.3628L9.53674e-07 6.21885L5.96738 5.43223L8.55951 0Z" fill="#F28B63"/>
+                      </svg>
+
+                      <p class="card__rating-number">
+                        4.8
+                      </p>
+                    </div>
+                  </div>
+                  <blockquote class="card__quote">
+                    <p class="card__description card__description--small">
+                      My experience with Victor has been amazing. After the session I feel like a new person. Very grateful for his care and thorough approach
+                    </p>
+                  </blockquote>
+                </article>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
