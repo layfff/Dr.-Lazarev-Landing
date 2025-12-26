@@ -1,0 +1,33 @@
+.socials {
+  &__list {
+    display: flex;
+    column-gap: 6px;
+  }
+
+  &__link {
+    @include square(28px);
+
+    @include mobile {
+      @include square(40px);
+    }
+
+    @include mobile {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    color: var(--color-dark);
+    background-color: var(--color-accent);
+
+    @include hover {
+      scale: 1.1;
+    }
+  }
+}

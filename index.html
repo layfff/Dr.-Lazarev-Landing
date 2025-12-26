@@ -423,7 +423,7 @@
           </header>
 
           <div class="testimonials__body">
-            <ul class="testimonial__card-list grid grid--3">
+            <ul class="testimonials__card-list scrollbar">
               <li class="testimonials__card-list-item">
                 <article class="testimonials__card card">
                   <div class="card__header">
@@ -495,6 +495,120 @@
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__body">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo logo">
+            <img 
+              src="./images/logo-dark.svg" 
+              alt="Dr. Lazarev" 
+              class="logo__image"
+              loading="lazy"
+              width="164" height="30">
+          </a>
+        </div>
+
+        <nav class="footer__menu hidden-mobile">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-list-item">
+              <a href="#" class="footer__link">About me</a>
+            </li>
+
+            <li class="footer__menu-list-item">
+              <a href="#" class="footer__link">Sessions</a>
+            </li>
+
+            <li class="footer__menu-list-item">
+              <a href="#" class="footer__link">reviews</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__contacts hidden-mobile">
+            <div class="footer__contacts-links">
+              <a class="footer__link" href="tel:+4204562001041">+420 (456) 200-10-41</a>
+              <a class="footer__link" href="mailto:lazarevinfo@gmail.com">lazarevinfo@gmail.com</a>
+            </div>
+
+            <div class="footer__socials socials">
+              <ul class="socials__list">
+                <li class="socials__list-item">
+                  <a href="#" class="socials__link">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.25 0.5H3.41667C1.80584 0.5 0.5 1.80584 0.5 3.41667V9.25C0.5 10.8608 1.80584 12.1667 3.41667 12.1667H9.25C10.8608 12.1667 12.1667 10.8608 12.1667 9.25V3.41667C12.1667 1.80584 10.8608 0.5 9.25 0.5Z" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8.6674 5.96666C8.73939 6.45214 8.65647 6.94795 8.43043 7.38359C8.20439 7.81922 7.84674 8.17248 7.40835 8.39314C6.96996 8.61379 6.47316 8.69059 5.98861 8.61262C5.50406 8.53465 5.05643 8.30588 4.70939 7.95884C4.36235 7.6118 4.13358 7.16417 4.05561 6.67962C3.97764 6.19507 4.05444 5.69827 4.27509 5.25988C4.49574 4.82149 4.84901 4.46384 5.28464 4.2378C5.72027 4.01176 6.21609 3.92884 6.70157 4.00083C7.19677 4.07426 7.65523 4.30501 8.00922 4.65901C8.36321 5.013 8.59397 5.47146 8.6674 5.96666Z" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.54257 3.125H9.5483" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="socials__list-item">
+                  <a href="#" class="socials__link">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.02814 0C3.18693 0 0.0562815 3.115 0.0562815 6.937C0.0562815 8.162 0.3799 9.352 0.984925 10.402L0 14L3.69347 13.034C4.71357 13.587 5.8603 13.881 7.02814 13.881C10.8693 13.881 14 10.766 14 6.944C14 5.089 13.2754 3.346 11.9598 2.037C10.6442 0.721 8.89246 0 7.02814 0ZM7.03518 1.169C8.58291 1.169 10.0322 1.771 11.1296 2.863C12.2201 3.955 12.8251 5.404 12.8251 6.944C12.8251 10.122 10.2221 12.705 7.02814 12.705C5.98693 12.705 4.96683 12.432 4.0804 11.9L3.86935 11.781L1.67437 12.355L2.25829 10.227L2.11759 10.003C1.5407 9.1 1.23116 8.029 1.23116 6.937C1.23819 3.759 3.83417 1.169 7.03518 1.169ZM4.55879 3.731C4.44623 3.731 4.25628 3.773 4.09447 3.948C3.9397 4.123 3.48241 4.55 3.48241 5.397C3.48241 6.251 4.10854 7.07 4.18593 7.189C4.28442 7.308 5.42412 9.058 7.17588 9.8C7.59095 9.989 7.91457 10.094 8.16784 10.171C8.58291 10.304 8.96281 10.283 9.26533 10.241C9.60301 10.192 10.2925 9.821 10.4402 9.415C10.5879 9.009 10.5879 8.666 10.5457 8.589C10.4965 8.519 10.3839 8.477 10.208 8.4C10.0322 8.302 9.17387 7.882 9.01909 7.826C8.85729 7.77 8.75879 7.742 8.62512 7.91C8.51256 8.085 8.17487 8.477 8.07638 8.589C7.97085 8.708 7.87236 8.722 7.70352 8.638C7.5206 8.547 6.95779 8.365 6.29648 7.777C5.77588 7.315 5.43116 6.748 5.32563 6.573C5.24121 6.405 5.31859 6.3 5.40301 6.223C5.4804 6.146 5.59296 6.02 5.66332 5.915C5.75477 5.817 5.78291 5.74 5.8392 5.628C5.89548 5.509 5.86734 5.411 5.82513 5.327C5.78291 5.25 5.43116 4.382 5.28342 4.039C5.14271 3.703 5.00201 3.745 4.88945 3.738C4.79095 3.738 4.67839 3.731 4.55879 3.731Z" fill="#212121"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        <div class="footer__content visible-mobile">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-list-item">
+                <a href="#" class="footer__link">About me</a>
+              </li>
+
+              <li class="footer__menu-list-item">
+                <a href="#" class="footer__link">Sessions</a>
+              </li>
+
+              <li class="footer__menu-list-item">
+                <a href="#" class="footer__link">reviews</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__contacts">
+            <div class="footer__contacts-links">
+              <a class="footer__link" href="tel:+4204562001041">+420 (456) 200-10-41</a>
+              <a class="footer__link" href="mailto:lazarevinfo@gmail.com">lazarevinfo@gmail.com</a>
+            </div>
+
+            <div class="footer__socials socials">
+              <ul class="socials__list">
+                <li class="socials__list-item">
+                  <a href="#" class="socials__link">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.25 0.5H3.41667C1.80584 0.5 0.5 1.80584 0.5 3.41667V9.25C0.5 10.8608 1.80584 12.1667 3.41667 12.1667H9.25C10.8608 12.1667 12.1667 10.8608 12.1667 9.25V3.41667C12.1667 1.80584 10.8608 0.5 9.25 0.5Z" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8.6674 5.96666C8.73939 6.45214 8.65647 6.94795 8.43043 7.38359C8.20439 7.81922 7.84674 8.17248 7.40835 8.39314C6.96996 8.61379 6.47316 8.69059 5.98861 8.61262C5.50406 8.53465 5.05643 8.30588 4.70939 7.95884C4.36235 7.6118 4.13358 7.16417 4.05561 6.67962C3.97764 6.19507 4.05444 5.69827 4.27509 5.25988C4.49574 4.82149 4.84901 4.46384 5.28464 4.2378C5.72027 4.01176 6.21609 3.92884 6.70157 4.00083C7.19677 4.07426 7.65523 4.30501 8.00922 4.65901C8.36321 5.013 8.59397 5.47146 8.6674 5.96666Z" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.54257 3.125H9.5483" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="socials__list-item">
+                  <a href="#" class="socials__link">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.02814 0C3.18693 0 0.0562815 3.115 0.0562815 6.937C0.0562815 8.162 0.3799 9.352 0.984925 10.402L0 14L3.69347 13.034C4.71357 13.587 5.8603 13.881 7.02814 13.881C10.8693 13.881 14 10.766 14 6.944C14 5.089 13.2754 3.346 11.9598 2.037C10.6442 0.721 8.89246 0 7.02814 0ZM7.03518 1.169C8.58291 1.169 10.0322 1.771 11.1296 2.863C12.2201 3.955 12.8251 5.404 12.8251 6.944C12.8251 10.122 10.2221 12.705 7.02814 12.705C5.98693 12.705 4.96683 12.432 4.0804 11.9L3.86935 11.781L1.67437 12.355L2.25829 10.227L2.11759 10.003C1.5407 9.1 1.23116 8.029 1.23116 6.937C1.23819 3.759 3.83417 1.169 7.03518 1.169ZM4.55879 3.731C4.44623 3.731 4.25628 3.773 4.09447 3.948C3.9397 4.123 3.48241 4.55 3.48241 5.397C3.48241 6.251 4.10854 7.07 4.18593 7.189C4.28442 7.308 5.42412 9.058 7.17588 9.8C7.59095 9.989 7.91457 10.094 8.16784 10.171C8.58291 10.304 8.96281 10.283 9.26533 10.241C9.60301 10.192 10.2925 9.821 10.4402 9.415C10.5879 9.009 10.5879 8.666 10.5457 8.589C10.4965 8.519 10.3839 8.477 10.208 8.4C10.0322 8.302 9.17387 7.882 9.01909 7.826C8.85729 7.77 8.75879 7.742 8.62512 7.91C8.51256 8.085 8.17487 8.477 8.07638 8.589C7.97085 8.708 7.87236 8.722 7.70352 8.638C7.5206 8.547 6.95779 8.365 6.29648 7.777C5.77588 7.315 5.43116 6.748 5.32563 6.573C5.24121 6.405 5.31859 6.3 5.40301 6.223C5.4804 6.146 5.59296 6.02 5.66332 5.915C5.75477 5.817 5.78291 5.74 5.8392 5.628C5.89548 5.509 5.86734 5.411 5.82513 5.327C5.78291 5.25 5.43116 4.382 5.28342 4.039C5.14271 3.703 5.00201 3.745 4.88945 3.738C4.79095 3.738 4.67839 3.731 4.55879 3.731Z" fill="#212121"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="footer__copyright">© <time datetime="2023">2023</time></span>
+        <a href="#" class="footer__policy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
 
   <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
     <form class="mobile-overlay__close-button-wrapper" method="dialog">
